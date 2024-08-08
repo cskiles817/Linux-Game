@@ -1,0 +1,3 @@
+		WELCOME TO THE LINUX PATH-BASED ADVENTURE GAME!!
+			YOUR JOURNEY BEGINS NOW!
+Currently you are at your home in Lake Tahoe, California. The location of your home is very desolate with very little civilization in sight.This emptiness around you encourages you to travel outside of your regular boundaries and explore the great unknown.There are three different paths to travel on, type ls to view the list of paths available to travel down.The ls-command is used to list all of the contents of a directory. To travel along a path, type cd followed by the path you want to travel down. The cd-command allows you to change to another directory.If you ever forget your current location, type pwd. The pwd-command prints the current working directory (pathname).
