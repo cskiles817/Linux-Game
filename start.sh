@@ -44,12 +44,12 @@ handle_command() {
                 else
                     cd "$arg"
                     CURRENT_LOCATION=current_location
-                   # if [ -e .image.txt ]; then
-                   #     cat .image.txt
-                   # fi
-                   # if [ -e .desc.txt ]; then
-                   #     cat .desc.txt
-                   # fi 
+                    if [ -e .image.txt ]; then
+                        cat .image.txt
+                    fi
+                    if [ -e .desc.txt ]; then
+                        cat .desc.txt
+                    fi 
              fi
         else
                 echo "Directory not found."
@@ -65,7 +65,7 @@ handle_command() {
             echo " "
             
       ;;
-        pwd)
+         pwd)
             pwd current_location
                                              #NEEDS FIXED, PROVIDES PICTURE/SAYING FOR EVERY DIRECTORY WHEN PWD IS USED
             echo  '                         
@@ -101,8 +101,17 @@ handle_command() {
             less
             ;;
 
-        touch)
-            touch
+        help)
+            
+            echo " "
+            echo -e "\e[4mHELP MENU:\e[0m"
+            echo "The pwd-command prints the current working directory (pathname)."
+            echo "The ls-command is used to list all of the contents of a directory."
+            echo "The cd-command followed by a directory name allows you to change to that directory."
+            echo "The cat-command followed by a filename will show the contents of that file."
+            echo "The less-command followed by a filename allows you to interact with items."
+            echo "The exit-command will exit you out of the game."
+            echo " "
             ;;
 
         clear)
